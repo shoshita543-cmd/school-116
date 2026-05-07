@@ -4,74 +4,52 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Dashboard التقويم المدرسي 2026</title>
+<title>التقويم المدرسي</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700&family=Tajawal:wght@400;500&display=swap" rel="stylesheet">
 
 <style>
 body{
-font-family:Tajawal;
-margin:0;
-background:#f4f7fb;
+  margin:0;
+  font-family:'Tajawal';
+  background:linear-gradient(135deg,#3b2cff,#1e90ff);
+  color:white;
 }
 
-/* Header */
 header{
-background:linear-gradient(135deg,#0f172a,#1e3a8a);
-color:white;
-text-align:center;
-padding:60px;
+  text-align:center;
+  padding:30px;
 }
 
-/* Dashboard */
-.dashboard{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-gap:20px;
-padding:20px;
+h1{
+  font-family:'Cairo';
 }
 
-.box{
-background:white;
-padding:20px;
-border-radius:15px;
-text-align:center;
-box-shadow:0 5px 15px rgba(0,0,0,0.1);
+.section{
+  background:white;
+  color:#222;
+  margin:20px;
+  padding:20px;
+  border-radius:16px;
 }
 
-.big{
-font-size:30px;
-color:#1e3a8a;
+.section h2{
+  color:#3b2cff;
 }
 
-/* Sections */
-section{
-padding:30px;
-max-width:1100px;
-margin:auto;
-}
-
-h2{
-color:#1e3a8a;
-}
-
-/* Accordion */
-details{
-background:white;
-margin:10px 0;
-padding:15px;
-border-radius:10px;
-box-shadow:0 5px 10px rgba(0,0,0,0.1);
+.item{
+  margin:10px 0;
+  padding:12px;
+  background:#f4f6ff;
+  border-radius:10px;
 }
 
 .role{
-margin-top:10px;
-font-size:14px;
-}
-
-footer{
-background:#1e3a8a;
-color:white;
-text-align:center;
-padding:20px;
+  background:#eef2ff;
+  padding:10px;
+  margin:8px 0;
+  border-right:5px solid #3b2cff;
+  border-radius:10px;
 }
 </style>
 
@@ -80,83 +58,71 @@ padding:20px;
 <body>
 
 <header>
-<h1>لوحة قيادة التقويم المدرسي</h1>
-<p>المتوسطة السادسة عشر بعد المئة – 2026</p>
+  <h1>المتوسطة السادسة عشر بعد المئة</h1>
+  <p>التقويم المدرسي 2025</p>
+  <p>الأداء العام: 78% | مستوى الأداء: التقدم</p>
 </header>
 
-<div class="dashboard">
+<!-- المجالات -->
+<div class="section">
+<h2>أداء المدرسة وفق المجالات</h2>
 
-<div class="box">
-<p>الأداء العام</p>
-<div class="big">78%</div>
+<div class="item">
+<b>الإدارة المدرسية - 83.25%</b><br>
+قيادة المدرسة • التخطيط • متابعة الأداء • تحسين العمل المدرسي
 </div>
 
-<div class="box">
-<p>الإدارة المدرسية</p>
-<div class="big">83%</div>
+<div class="item">
+<b>التعليم والتعلم - 78.75%</b><br>
+استراتيجيات التدريس • تنوع الأنشطة • التقويم • دعم التعلم
 </div>
 
-<div class="box">
-<p>التعليم والتعلم</p>
-<div class="big">75%</div>
+<div class="item">
+<b>نواتج التعلم - 81.50%</b><br>
+التحصيل الدراسي • المهارات الأساسية • التفكير • القيم والسلوك
 </div>
 
-<div class="box">
-<p>نواتج التعلم</p>
-<div class="big">74%</div>
-</div>
-
-<div class="box">
-<p>البيئة المدرسية</p>
-<div class="big">81%</div>
+<div class="item">
+<b>البيئة المدرسية - 81.25%</b><br>
+الأمن والسلامة • البيئة الصفية • المناخ المدرسي • التجهيزات
 </div>
 
 </div>
 
-<section>
-<h2>📊 المؤشرات التفصيلية</h2>
+<!-- الأدوار -->
+<div class="section">
+<h2>الأدوار</h2>
 
-<details>
-<summary>تنمية مهارات التفكير العليا</summary>
-<div class="role"><b>الإدارة:</b> تدريب المعلمات</div>
-<div class="role"><b>المعلمة:</b> استراتيجيات التفكير</div>
-<div class="role"><b>الطالبة:</b> التحليل والاستنتاج</div>
-<div class="role"><b>التحسين:</b> تطوير الأنشطة</div>
-<div class="role"><b>الاستدامة:</b> متابعة مستمرة</div>
-<div class="role"><b>الابتكار:</b> التعلم بالمشكلات</div>
-</details>
+<div class="role"><b>الإدارة:</b> التخطيط والمتابعة، دعم المعلمات، تحسين الأداء العام</div>
+<div class="role"><b>المعلمات:</b> تطوير التدريس، تنمية مهارات الطالبات، متابعة التحصيل</div>
+<div class="role"><b>الطالبات:</b> الالتزام، المشاركة، تنمية التعلم الذاتي</div>
 
-<details>
-<summary>تحسين نتائج الرياضيات</summary>
-<div class="role"><b>الإدارة:</b> متابعة النتائج</div>
-<div class="role"><b>المعلمة:</b> برامج علاجية</div>
-<div class="role"><b>الطالبة:</b> التدريب المستمر</div>
-</details>
+</div>
 
-</section>
+<!-- المرحلة القادمة -->
+<div class="section">
+<h2>المرحلة القادمة</h2>
+<p>التركيز على تحسين نواتج التعلم ورفع مستوى مهارات التفكير والرياضيات والمهارات الرقمية.</p>
+</div>
 
-<section>
-<h2>🚀 خطة 2026</h2>
-<ul>
-<li>تحليل النتائج</li>
-<li>تحديد الفجوات</li>
-<li>خطط علاجية</li>
-<li>متابعة شهرية</li>
-</ul>
-</section>
+<!-- الاستدامة -->
+<div class="section">
+<h2>الاستدامة والابتكار</h2>
+<p>استدامة نقاط القوة في القيم والانضباط، وتحويل فرص التحسين إلى مبادرات تطوير مبتكرة قابلة للقياس.</p>
+</div>
 
-<section>
-<h2>📢 نشر ثقافة التقويم</h2>
-<ul>
-<li>ورش تدريبية</li>
-<li>اجتماعات توعوية</li>
-<li>إشراك الأسرة</li>
-</ul>
-</section>
+<!-- الجاهزية -->
+<div class="section">
+<h2>الجاهزية للدورة الثانية 2026</h2>
+<p>تفعيل نموذج الجاهزية عبر بناء خطط تحسين مستندة إلى نتائج التقويم، ومتابعة الأثر بشكل مستمر.</p>
+</div>
 
-<footer>
-المتوسطة السادسة عشر بعد المئة
-</footer>
+<!-- التعريف -->
+<div class="section">
+<h2>التقويم المدرسي</h2>
+<p>هو عملية تهدف إلى تحسين جودة التعليم من خلال قياس الأداء وتحديد نقاط القوة وفرص التطوير.</p>
+<p><b>أهميته:</b> دعم اتخاذ القرار، رفع مستوى التحصيل، وتحقيق جودة التعليم.</p>
+</div>
 
 </body>
 </html>
