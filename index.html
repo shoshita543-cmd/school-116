@@ -1,127 +1,184 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ar" dir="rtl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>التقويم المدرسي</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700&family=Tajawal:wght@400;500&display=swap" rel="stylesheet">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>منصة ثقافة التقويم 2026</title>
 
 <style>
 body{
-  margin:0;
-  font-family:'Tajawal';
-  background:linear-gradient(135deg,#3b2cff,#1e90ff);
-  color:white;
+margin:0;
+font-family:Tahoma;
+background:#f4f7f8;
+direction:rtl;
 }
 
 header{
-  text-align:center;
-  padding:30px;
+background:linear-gradient(135deg,#0f766e,#0f172a);
+color:white;
+padding:60px;
+text-align:center;
 }
 
-h1{
-  font-family:'Cairo';
-}
+h1{font-size:40px;margin:0}
+p{font-size:18px}
 
 .section{
-  background:white;
-  color:#222;
-  margin:20px;
-  padding:20px;
-  border-radius:16px;
+padding:40px;
+max-width:1100px;
+margin:auto;
 }
 
-.section h2{
-  color:#3b2cff;
+.card{
+background:white;
+padding:20px;
+border-radius:20px;
+margin:15px 0;
+box-shadow:0 10px 30px rgba(0,0,0,0.1);
 }
 
-.item{
-  margin:10px 0;
-  padding:12px;
-  background:#f4f6ff;
-  border-radius:10px;
+h2{color:#0f766e}
+
+.indicator{
+margin:10px 0;
+padding:15px;
+border-radius:15px;
+background:#f1f5f9;
+cursor:pointer;
 }
 
-.role{
-  background:#eef2ff;
-  padding:10px;
-  margin:8px 0;
-  border-right:5px solid #3b2cff;
-  border-radius:10px;
+.indicator:hover{background:#e2e8f0}
+
+.details{
+display:none;
+padding-top:10px;
 }
+
+.tag{
+display:inline-block;
+padding:5px 10px;
+border-radius:999px;
+font-size:12px;
+margin:3px;
+}
+
+.red{background:#fee2e2;color:#b91c1c}
+.green{background:#dcfce7;color:#15803d}
+.orange{background:#ffedd5;color:#c2410c}
 </style>
+
+<script>
+function toggle(id){
+var x=document.getElementById(id);
+x.style.display = x.style.display==="block"?"none":"block";
+}
+</script>
 
 </head>
 
 <body>
 
 <header>
-  <h1>المتوسطة السادسة عشر بعد المئة</h1>
-  <p>التقويم المدرسي 2025</p>
-  <p>الأداء العام: 78% | مستوى الأداء: التقدم</p>
+<h1>منصة ثقافة التقويم المدرسي 2026</h1>
+<p>تحويل تقرير التقويم إلى خطة تطوير ونشر ثقافة داخل المدرسة</p>
 </header>
 
-<!-- المجالات -->
 <div class="section">
-<h2>أداء المدرسة وفق المجالات</h2>
 
-<div class="item">
-<b>الإدارة المدرسية - 83.25%</b><br>
-قيادة المدرسة • التخطيط • متابعة الأداء • تحسين العمل المدرسي
+<h2>📊 معطيات المدرسة</h2>
+
+<div class="card">
+<p>الأداء العام: <b>78%</b></p>
+<p>الإدارة: 83%</p>
+<p>التعليم: 75%</p>
+<p>النواتج: 74%</p>
+<p>البيئة: 81%</p>
 </div>
 
-<div class="item">
-<b>التعليم والتعلم - 78.75%</b><br>
-استراتيجيات التدريس • تنوع الأنشطة • التقويم • دعم التعلم
+<h2>🎯 أولويات 2026</h2>
+
+<div class="card">
+<span class="tag red">التفكير</span>
+<span class="tag red">الرياضيات</span>
+<span class="tag red">القراءة</span>
+<span class="tag red">المهارات الرقمية</span>
 </div>
 
-<div class="item">
-<b>نواتج التعلم - 81.50%</b><br>
-التحصيل الدراسي • المهارات الأساسية • التفكير • القيم والسلوك
+<h2>📘 ما هو التقويم؟</h2>
+
+<div class="card">
+التقويم هو عملية تحليل أداء المدرسة باستخدام مؤشرات ومعايير بهدف تحسين التعليم ونواتج التعلم.
 </div>
 
-<div class="item">
-<b>البيئة المدرسية - 81.25%</b><br>
-الأمن والسلامة • البيئة الصفية • المناخ المدرسي • التجهيزات
+<h2>🚀 كيف يسير التقويم؟</h2>
+
+<div class="card">
+1- تهيئة<br>
+2- جمع شواهد<br>
+3- تحليل<br>
+4- تحسين<br>
+5- متابعة
 </div>
 
+<h2>📌 المؤشرات (اضغطي لعرض التفاصيل)</h2>
+
+<div class="indicator" onclick="toggle('i1')">
+تنمية مهارات التفكير العليا
+<div id="i1" class="details">
+الإدارة: متابعة الأسئلة العليا<br>
+المعلمة: أنشطة تحليل وتفكير<br>
+الطالبة: استنتاج وحل مشكلات<br>
+تحسين: مهام تفكير<br>
+استدامة: تطبيق يومي<br>
+ابتكار: تحدي تفكير
+</div>
 </div>
 
-<!-- الأدوار -->
-<div class="section">
-<h2>الأدوار</h2>
-
-<div class="role"><b>الإدارة:</b> التخطيط والمتابعة، دعم المعلمات، تحسين الأداء العام</div>
-<div class="role"><b>المعلمات:</b> تطوير التدريس، تنمية مهارات الطالبات، متابعة التحصيل</div>
-<div class="role"><b>الطالبات:</b> الالتزام، المشاركة، تنمية التعلم الذاتي</div>
-
+<div class="indicator" onclick="toggle('i2')">
+تنمية المهارات القرائية والعددية
+<div id="i2" class="details">
+الإدارة: خطة علاج<br>
+المعلمة: تدريب مستمر<br>
+الطالبة: قراءة يومية<br>
+تحسين: عيادة تعلم<br>
+استدامة: قياس شهري<br>
+ابتكار: تحديات
+</div>
 </div>
 
-<!-- المرحلة القادمة -->
-<div class="section">
-<h2>المرحلة القادمة</h2>
-<p>التركيز على تحسين نواتج التعلم ورفع مستوى مهارات التفكير والرياضيات والمهارات الرقمية.</p>
+<div class="indicator" onclick="toggle('i3')">
+نتائج الرياضيات
+<div id="i3" class="details">
+الإدارة: تحليل نافس<br>
+المعلمة: مسائل متنوعة<br>
+الطالبة: تدريب يومي<br>
+تحسين: مجموعات دعم<br>
+استدامة: اختبار أسبوعي<br>
+ابتكار: منافسات
+</div>
 </div>
 
-<!-- الاستدامة -->
-<div class="section">
-<h2>الاستدامة والابتكار</h2>
-<p>استدامة نقاط القوة في القيم والانضباط، وتحويل فرص التحسين إلى مبادرات تطوير مبتكرة قابلة للقياس.</p>
+<h2>📢 نشر ثقافة التقويم</h2>
+
+<div class="card">
+- مؤشر الأسبوع<br>
+- ساعة التقويم<br>
+- رسائل للأسرة<br>
+- لوحات توعوية<br>
+- فريق سفراء التقويم
 </div>
 
-<!-- الجاهزية -->
-<div class="section">
-<h2>الجاهزية للدورة الثانية 2026</h2>
-<p>تفعيل نموذج الجاهزية عبر بناء خطط تحسين مستندة إلى نتائج التقويم، ومتابعة الأثر بشكل مستمر.</p>
+<h2>🗓 خطة 2026</h2>
+
+<div class="card">
+يناير: تعريف التقويم<br>
+فبراير: تحليل النتائج<br>
+مارس: تنفيذ المبادرات<br>
+أبريل: متابعة<br>
+مايو: قياس الأثر<br>
+يونيو: تقرير نهائي
 </div>
 
-<!-- التعريف -->
-<div class="section">
-<h2>التقويم المدرسي</h2>
-<p>هو عملية تهدف إلى تحسين جودة التعليم من خلال قياس الأداء وتحديد نقاط القوة وفرص التطوير.</p>
-<p><b>أهميته:</b> دعم اتخاذ القرار، رفع مستوى التحصيل، وتحقيق جودة التعليم.</p>
 </div>
 
 </body>
